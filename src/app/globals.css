@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-verde-200: #acef75;
+  --color-verde-300: #91ee77;
+  --color-verde-400: #17e880;
+  --color-verde-700: #2e482c;
+  --color-verde-800: #16281f;
+  --color-verde-900: #0f1c15;
+  --color-verde-950: #030504;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --animate-slide-in: slide-in 0.4s ease-in-out forwards;
+  --animate-fade-in: fade-in 0.4s ease-in-out forwards;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility animate-1 {
+  animation-delay: 100ms;
+}
+
+@utility animate-2 {
+  animation-delay: 200ms;
+}
+
+@utility animate-3 {
+  animation-delay: 300ms;
+}
+
+@utility animate-4 {
+  animation-delay: 400ms;
 }
