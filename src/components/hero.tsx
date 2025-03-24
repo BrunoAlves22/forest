@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 import Wildbeast from "../img/parceiros/wildbeast.svg";
 
 export function Hero() {
@@ -12,27 +13,24 @@ export function Hero() {
     setVideo(random < 25 ? "/video_chuva.mp4" : "/video_sol.mp4");
   }, [random]);
 
-  if (!video) return null;
   return (
     <>
       <main className="container mx-auto px-3">
         <div className="text-white relative pt-96 px-8 pb-8 max-sm:pt-12 max-sm:px-4 bg-gradient-to-t from-verde-950/80 rounded-2xl overflow-hidden">
-          {/* <Image
-            src={Floresta}
-            alt="Hero Forest"
-            className="absolute inset-0 -z-10 size-full object-cover"
-          /> */}
+          {!video && (
+            <Skeleton className="absolute inset-0 -z-10 size-full object-cover" />
+          )}
 
-          <video
-            src={video}
-            width={1280}
-            height={720}
-            muted
-            autoPlay
-            playsInline
-            loop
-            className="absolute inset-0 -z-10 size-full object-cover animate-fade-in"
-          ></video>
+          {video && (
+            <video
+              src="/video_chuva.mp4"
+              className="absolute inset-0 -z-10 size-full object-cover animate-fade-in"
+              autoPlay
+              loop
+              muted
+              playsInline
+            ></video>
+          )}
 
           <div className="sm:bg-verde-950 bg-verde-950/60 flex flex-col items-start gap-2 p-4 sm:inline-flex sm:flex-row sm:gap-8 mb-8 sm:items-center sm:py-1 sm:pr-1 sm:pl-4 rounded-xl sm:rounded-full">
             Vagas para o feriado de 7 de setembro
