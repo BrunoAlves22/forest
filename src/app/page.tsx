@@ -18,14 +18,30 @@ import Dogs from "../img/parceiros/dogs.svg";
 import Lescone from "../img/parceiros/lescone.svg";
 import Surfbot from "../img/parceiros/surfbot.svg";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [menu, setMenu] = useState<boolean>(false);
+  const [temperature, setTemperature] = useState<number>(25);
+  const [time, setTime] = useState<string>("☀️");
+  const [date, setDate] = useState<string>("Segunda");
+  const [video, setVideo] = useState<string>("");
 
   function toggleMenu() {
     setMenu(!menu);
   }
+
+  const random = Math.floor(Math.random() * 10) + 20;
+
+  useEffect(() => {
+    const dateTime = new Date();
+    setTemperature(random);
+    setTime(random < 25 ? `🌧️ ${random + 5}%` : "☀️");
+    setDate(dateTime.toLocaleDateString("pt-BR", { weekday: "long" }));
+    setVideo(random < 25 ? "/video_chuva.mp4" : "/video_sol.mp4");
+  }, [random]);
+
+  if (!video) return null;
 
   return (
     <>
@@ -36,9 +52,9 @@ export default function Home() {
             <span className="size-2 bg-verde-300 rounded-full block relative -left-1"></span>
           </div>
           <div className="flex text-verde-300 divide-x-2 divide-verde-800 *:px-4 *:py-2">
-            <div className="capitalize">Segunda</div>
-            <div>25°</div>
-            <div>⛅</div>
+            <div className="capitalize">{date}</div>
+            <div>{temperature}°</div>
+            <div>{time}</div>
           </div>
         </div>
       </div>
@@ -92,14 +108,14 @@ export default function Home() {
           /> */}
 
           <video
-            src="/video_chuva.mp4"
+            src={video}
             width={1280}
             height={720}
             muted
             autoPlay
             playsInline
             loop
-            className="absolute inset-0 -z-10 size-full object-cover"
+            className="absolute inset-0 -z-10 size-full object-cover animate-fade-in"
           ></video>
 
           <div className="sm:bg-verde-950 bg-verde-950/60 flex flex-col items-start gap-2 p-4 sm:inline-flex sm:flex-row sm:gap-8 mb-8 sm:items-center sm:py-1 sm:pr-1 sm:pl-4 rounded-xl sm:rounded-full">
