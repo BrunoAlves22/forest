@@ -6,7 +6,7 @@ import Casa3 from "../img/casa3.jpg";
 export function Accommodation() {
   return (
     <>
-      <section className="container mx-auto px-3 grid lg:grid-cols-[2fr_3fr] gap-8 mb-12 sm:mb-16 pt-16">
+      <section className="container mx-auto px-3 grid lg:grid-cols-[2fr_3fr] gap-8 mb-12 sm:mb-16 pt-16 bg-radial-[50%_100%_at_50%_0%] from-verde-700 to-verde-800">
         <div className="content-end bg-[url(../img/padrao.svg)] bg-no-repeat bg-contain bg-left-bottom">
           <h2 className="text-white mb-8 text-4xl font-serif lg:text-5xl">
             Refúgio Natural
