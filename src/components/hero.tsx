@@ -23,7 +23,7 @@ export function Hero() {
 
           {video && (
             <video
-              src="/video_chuva.mp4"
+              src={video}
               className="absolute inset-0 -z-10 size-full object-cover animate-fade-in"
               autoPlay
               loop

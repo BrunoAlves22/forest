@@ -19,7 +19,7 @@ export function Header() {
   useEffect(() => {
     const dateTime = new Date();
     setTemperature(random);
-    setTime(random < 25 ? `🌧️ ${random + 5}%` : "☀️");
+    setTime(random < 25 ? `🌧️` : "☀️");
     setDate(dateTime.toLocaleDateString("pt-BR", { weekday: "long" }));
   }, [random]);
   return (
