@@ -15,6 +15,9 @@
   --animate-slide-in: slide-in 0.4s ease-in-out forwards;
   --animate-fade-in: fade-in 0.4s ease-in-out forwards;
 
+  --font-sans: "DM Sans" "system-ui" "sans-serif";
+  --font-serif: "DM Serif Text" "serif";
+
   @keyframes slide-in {
     0% {
       transform: translateX(-20px);
