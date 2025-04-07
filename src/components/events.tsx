@@ -11,7 +11,11 @@ export function Events() {
           </h2>
 
           <div className="grid grid-cols-[repeat(3,minmax(300px,1fr))] overflow-x-auto pb-4 snap-x snap-mandatory gap-4 sm:gap-8">
-            <div className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl ">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="200"
+              className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl "
+            >
               <h3 className="text-verde-300 text-2xl font-serif">Lua Nova</h3>
 
               <div className="text-white">
@@ -32,7 +36,11 @@ export function Events() {
               </a>
             </div>
 
-            <div className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl ">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="300"
+              className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl "
+            >
               <h3 className="text-verde-300 text-2xl font-serif">
                 Chuva de Meteoros
               </h3>
@@ -55,7 +63,11 @@ export function Events() {
               </a>
             </div>
 
-            <div className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl ">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="400"
+              className="grid gap-4 snap-center bg-verde-800 p-6 sm:p-8 rounded-xl "
+            >
               <h3 className="text-verde-300 text-2xl font-serif">
                 Aurora Boreal
               </h3>

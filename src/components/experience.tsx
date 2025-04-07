@@ -41,7 +41,11 @@ export function Experience() {
         </div>
 
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
-          <div className="relative cursor-pointer overflow-hidden rounded-xl group">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="relative cursor-pointer overflow-hidden rounded-xl group"
+          >
             <Image
               src={Canoagem}
               alt="Canoagem"
@@ -53,7 +57,11 @@ export function Experience() {
             </div>
           </div>
 
-          <div className="relative cursor-pointer overflow-hidden rounded-xl group row-span-2">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            className="relative cursor-pointer overflow-hidden rounded-xl group row-span-2"
+          >
             <Image
               src={ObservacaoNoturna}
               alt="Observação Noturna"
@@ -65,7 +73,11 @@ export function Experience() {
             </div>
           </div>
 
-          <div className="relative cursor-pointer overflow-hidden rounded-xl group">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="relative cursor-pointer overflow-hidden rounded-xl group"
+          >
             <Image
               src={VidaSelvagem}
               alt="Vida Selvagem"
@@ -88,7 +100,10 @@ export function Experience() {
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-          <div className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:hover:-translate-y-2 transition-all duration-300">
+          <div
+            data-aos="fade-right"
+            className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:hover:-translate-y-2 transition-all duration-300"
+          >
             <div className="bg-verde-400 size-10 flex items-center justify-center rounded-full">
               <Image src={Manha} alt="Manhã" />
             </div>
@@ -102,7 +117,10 @@ export function Experience() {
             <span className="text-verde-300">05:40 - 07:00</span>
           </div>
 
-          <div className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:translate-y-12 sm:hover:translate-y-10 transition-all duration-300">
+          <div
+            data-aos="fade-up"
+            className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:translate-y-12 sm:hover:translate-y-10 transition-all duration-300"
+          >
             <div className="bg-verde-400 size-10 flex items-center justify-center rounded-full">
               <Image src={MeioDia} alt="Meio Dia" />
             </div>
@@ -117,7 +135,10 @@ export function Experience() {
             <span className="text-verde-300">12:00 - 14:00</span>
           </div>
 
-          <div className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:hover:-translate-y-2 transition-all duration-300">
+          <div
+            data-aos="fade-left"
+            className="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:hover:-translate-y-2 transition-all duration-300"
+          >
             <div className="bg-verde-400 size-10 flex items-center justify-center rounded-full">
               <Image src={Noite} alt="Noite" />
             </div>

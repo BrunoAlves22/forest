@@ -36,7 +36,11 @@ export function Accommodation() {
         </div>
 
         <div className="grid grid-cols-[2fr_1.3fr] gap-4 sm:gap-8">
-          <div className="col-span-full grid *:col-start-1 *:row-start-1">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="100"
+            className="col-span-full grid *:col-start-1 *:row-start-1"
+          >
             <Image
               src={Casa1}
               alt="Casa 1"
@@ -47,7 +51,11 @@ export function Accommodation() {
             </span>
           </div>
 
-          <div className="grid *:col-start-1 *:row-start-1">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="grid *:col-start-1 *:row-start-1"
+          >
             <Image
               src={Casa2}
               alt="Casa 2"
@@ -58,7 +66,11 @@ export function Accommodation() {
             </span>
           </div>
 
-          <div className="grid *:col-start-1 *:row-start-1">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            className="grid *:col-start-1 *:row-start-1"
+          >
             <Image
               src={Casa3}
               alt="Casa 3"

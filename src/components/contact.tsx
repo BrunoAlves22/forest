@@ -9,7 +9,7 @@ export function Contact() {
   return (
     <>
       <section className="container mx-auto px-3 mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8">
-        <div>
+        <div data-aos="fade-right">
           <h1 className="font-serif text-4xl text-verde-300 mb-4">
             Nossos Contatos
           </h1>
@@ -52,6 +52,7 @@ export function Contact() {
 
         <form
           action=""
+          data-aos="fade-left"
           className="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8"
         >
           <div className="grid gap-1">
