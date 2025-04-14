@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AosInit } from "@/components/aos-init";
 
 export const metadata: Metadata = {
   title: "Forest",
@@ -19,7 +18,6 @@ export default function RootLayout({
         cz-shortcut-listen="true"
       >
         {children}
-        <AosInit />
       </body>
     </html>
   );
