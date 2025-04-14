@@ -4,7 +4,7 @@ import Logo from "../img/forest.svg";
 export function Footer() {
   return (
     <>
-      <footer className="container pb-8 mx-auto">
+      <footer className="container pb-8 mx-auto px-3">
         <div className="bg-verde-900 grid gap-4 lg:grid-cols-2 p-6 sm:p-12 rounded-2xl mb-8">
           <div className="flex gap-8 max-sm:flex-col max-sm:gap-4">
             <div>

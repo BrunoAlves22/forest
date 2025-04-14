@@ -1,8 +1,8 @@
 export function Events() {
   return (
     <>
-      <section className="mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-900">
-        <div className="container mx-auto px-3">
+      <section className="mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-900 container mx-auto px-3">
+        <div className="">
           <p className="mb-4 text-center text-balance font-serif text-verde-200 uppercase tracking-widest text-sm">
             Conecte-se com a natureza
           </p>
