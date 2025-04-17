@@ -118,19 +118,19 @@ export function Contact() {
 
       <section className="container mx-auto px-3 mb-12 sm:mb-16">
         <ul className="flex flex-col items-center justify-center py-4 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-verde-900 sm:py-8 *:*:max-h-8">
-          <li>
+          <li data-aos="fade-down" data-aos-delay="200">
             <Image src={Caravan} alt="Caravan" className="w-full" />
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="300">
             <Image src={Wildbeast} alt="Wildbeast" className="w-full" />
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="400">
             <Image src={Lescone} alt="Lescone" className="w-full" />
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="500">
             <Image src={Dogs} alt="Dogs" className="w-full" />
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="600">
             <Image src={Surfbot} alt="Surfbot" className="w-full" />
           </li>
         </ul>
